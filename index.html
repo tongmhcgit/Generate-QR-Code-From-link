@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+    <title>Generate QR Code</title>
+</head>
+
+<body>
+    <h2 class="texttitle">Generate QR Code From link</h2>
+
+    <!-- Input สำหรับกรอกลิงก์ -->
+    <input class="linkInput" type="text" id="linkInput" placeholder="กรอกลิงก์ที่นี่" />
+    <br>
+    <!-- ปุ่มสำหรับสร้าง QR Code -->
+    <button class="btnCreate" onclick="generateQRCode()">Create QR Code</button>
+
+    <!-- ส่วนที่จะแสดง QR Code -->
+    <div>
+        <br>
+        <div id="qrcode"></div>
+        <br>
+    </div>
+    <!-- ปุ่มสำหรับบันทึก QR Code -->
+    <button class="saveBtn" id="saveBtn" onclick="saveQRCode()" style="display:none;">Save QR Code</button>
+
+    <script src="script/script.js"></script>
+    <script src="qrcodejs/qrcode.min.js"></script>
+    <!-- <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script> -->
+    
+
+</body>
+
+</html>
